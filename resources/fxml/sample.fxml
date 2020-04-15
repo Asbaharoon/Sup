@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="sample.Controller"
+          stylesheets="/css/sample.css"
+          xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+>
+
+    <Text text="Sup"
+          styleClass="title"
+          GridPane.columnSpan="2"
+          GridPane.halignment="CENTER"
+          GridPane.rowIndex="0"
+    />
+
+    <Label text="First Name:"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="1"/>
+
+    <TextField fx:id="firstName"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="1"/>
+
+    <Button onAction="#handleSaysup"
+            text="Say Sup!"
+            GridPane.columnIndex="1"
+            GridPane.halignment="RIGHT"
+            GridPane.rowIndex="2"/>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+
+</GridPane>
