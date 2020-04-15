@@ -20,9 +20,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //  Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
-        Group root = new Group();
+      /*  Group root = new Group();
         Text text = new Text("Sup?");
         text.setFont(new Font("Papyrus",80));
         Label label = new Label("Name:");
@@ -40,11 +40,14 @@ public class Main extends Application {
         VBox box = new VBox();
         box.getChildren().addAll(text,grid);
         root.getChildren().add(box);
+
+       */
         primaryStage.setTitle("Sup");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
-    }
 
+
+    }
 
     public static void main(String[] args) {
         launch(args);
